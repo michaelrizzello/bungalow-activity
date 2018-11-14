@@ -12,6 +12,7 @@ class Command(BaseCommand):
         for csv_file in options['csv_file']:
             #opens the csv file
             dataReader = csv.reader(open(csv_file), delimiter=',', quotechar='"')
+            next(dataReader, None)
             for row in dataReader:
 
                 # maps all the fields in the csv file to a variable
