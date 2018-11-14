@@ -1,5 +1,7 @@
-#Bungalow API Setup
+# Bungalow API Setup
 
+## Environment Setup
+```
 virtualenv env
 source env/bin/activate
 
@@ -13,12 +15,19 @@ chmod 755 manage.py
 
 ./manage.py makemigrations
 ./manage.py migrate
+```
 
-#Load Data
+## Load Data
+```
 ./manage.py import_file {csv_file}
+```
 
-#Start server
+## Start server
+```
 ./manage.py runserver
+```
 
-#View API
+## View API
+```
 http://127.0.0.1:8000
+```
